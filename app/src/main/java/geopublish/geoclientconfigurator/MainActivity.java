@@ -210,8 +210,6 @@ public class MainActivity extends AppCompatActivity {
 
             File file = new File(fileName);
             InputStream is = new FileInputStream(file.getPath());
-            //DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            //DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc = db.parse(new InputSource(is));
             doc.getDocumentElement().normalize();
 
